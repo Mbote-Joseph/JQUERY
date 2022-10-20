@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping List Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+        <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">
+        <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="https://demos.jquerymobile.com/1.4.5/_assets/js/index.js"></script>
+        <script src="https://demos.jquerymobile.com/1.4.5/js/jquery.mobile-1.4.5.min.js"></script>        
+        <script src="script.js?2" type="text/javascript"></script>  
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body onload="generate_items();">
+        <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-b " data-transition="pop">+ Add Item</a>
+        <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+
+                    <div style="padding:10px 20px;">
+                            <h3>Please add a new item</h3>
+                            <label for="un" class="ui-hidden-accessible">Item:</label>
+                <select id="new_item">
+                    <option value="apple">Apple</option>
+                    <option value="broccoli">Broccoli</option>
+                    <option value="carrots">Carrots</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="grapes">Grapes</option>
+                    <option value="lettuce">Lettuce</option>
+                    <option value="meat">Meat</option>
+                    <option value="milk">Milk</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="tomatoes">Tomatoes</option>
+                    <option value="water">Water</option>
+                    <option value="donut">Donut</option>
+                    <option value="tea">Tea</option>
+                </select>
+                <select id="new_qty">
+                    <option value="1">Select Qty</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select> 
+                <select id="new_type">
+                    <option value="regular">Regular</option>
+                    <option value="organic">Organic</option>
+                </select>
+                            <button onclick="add_item();" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Add Item</button>
+                        </div>
+
+        </div>
+        <form>
+            <input id="filterBasic-input" data-type="search">
+                <fieldset id="shopping-list" data-role="listview" data-filter="true" data-input="#filterBasic-input">
+                <!-- this is where we put the generated html for the items -->
+            </fieldset>
+            <button id="total_price"><button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+img.shopping-item-image{
+    height:20px;
+    margin-left:10px;
+}
+
+span.price{
+    font-size:12px;
+    margin-left:10px;
+    color:gray;
+    font-weight:normal;
+}
+
+span.qty{
+    font-size:10px;
+    font-weight:normal;
+}
+
+span.isle{
+    font-size:10px;
+    margin-left:10px;
+    color:white;
+    border-radius:5px;
+    padding:5px;
+}
+
+span.Vegetables{
+    background-color:green;
+}
+
+span.Fruits{
+    background-color:orange;
+}
+
+span.Deli{
+    background-color:red;
+}
+
+span.Beverages{
+    background-color:lightblue;
+    color:black;
+}
+
+span.Dairy{
+    background-color:white;
+    color:black;
+}
+
+span.Grains{
+    background-color:yellow;
+    color:black;
+}
+
+span.Coffee_Tea{
+    background-color:brown;
+    color:white;
+    
+}
+span.Candy{
+    background-color:pink;
+    color:black;
+}
+
+img.delivery, img.organic{
+    height:15px;
+    margin-left:10px;
+    margin-right:5px;
+}
+
+.fa-trash{
+    float:right;
+    color:gray;
+}
+
+.fa-trash:hover{
+    color:black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
